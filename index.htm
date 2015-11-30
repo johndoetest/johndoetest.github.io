@@ -324,8 +324,11 @@
 Hello!
 <script>
      var resp = 'Hello Github';
-	//$.postMessage(resp, window.opener.location.host, window.opener);
-	$.postMessage(resp, document.referrer, window.opener);
+	 if(document.referrer === "") {
+		$.postMessage(resp, window.opener.location.host, window.opener);
+	 } else {
+		$.postMessage(resp, document.referrer, window.opener);
+	}
     //window.close();
 </script>
 </body>
