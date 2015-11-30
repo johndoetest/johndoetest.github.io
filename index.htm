@@ -331,7 +331,7 @@ Hello!!
 <script>
      var resp = 'Hello Github!';
 	 if(document.referrer === "") {
-		$.postMessage(resp, window.location.href, window.opener);
+		$.postMessage(resp, "localhost:9080", window.opener);
 	 } else {
 		$.postMessage(resp, document.referrer, window.opener);
 	}
