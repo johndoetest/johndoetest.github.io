@@ -5,11 +5,13 @@
 </head>
 <body>
 
-Neo post message page!
-<script>
-     var resp = 'Hello Github!';
-     $.postMessage(resp, document.referrer, window.opener);
-    //window.close();
-</script>
+Hello page!
+
+<form action="pseats" method="post" name="uploadnew"
+		target="pseatsWindow" onsubmit="setTimeout('self.close()',1000)">
+		<input type="text" name="jsonResponse" value="Hello World!" /> <input type="submit"
+			name="submit" value="Go">
+	</form>
+	
 </body>
 </html>
