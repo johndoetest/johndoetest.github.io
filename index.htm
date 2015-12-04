@@ -9,7 +9,11 @@ Hello page!
 
 <script>
 	alert('hello');
-	alert(window.opener.location.href);
+	try {
+		alert(">" + window.opener.location.href + "<");
+	} catch(e) {
+		alert('some error!');
+	}
 </script>
 
 <form action="pseats" method="post" name="uploadnew"
