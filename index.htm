@@ -7,6 +7,10 @@
 
 Hello page!
 
+<script>
+	alert(window.opener.location.href);
+</script>
+
 <form action="pseats" method="post" name="uploadnew"
 		target="pseatsWindow" onsubmit="setTimeout('self.close()',1000)">
 		<input type="text" name="jsonResponse" value="Hello World!" /> <input type="submit"
